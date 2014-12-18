@@ -1,7 +1,4 @@
-
-
 ## calculating the inverse of a matrix and storing it in getsolve
-
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -15,10 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
        setsolve = setsolve,
        getsolve = getsolve)
 }
-
-
 ## Calculating or getting the inverse of a matix if this is already being calculated in getsolve and stored in m
-
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()
   if(!is.null(m)) {
